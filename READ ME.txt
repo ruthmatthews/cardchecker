@@ -1,0 +1,9 @@
+This small project was made as part of CS50's weekly problem set 1, details of which can be found at https://cs50.harvard.edu/x/2022/
+The programme uses Luhn's algorithm (outlined below) to check the validity of given card numbers, and assign each card "visa", "mastercard", "amex" or "invalid".
+Although not comprehensive, the check works on the majority of cards - ignoring some potential starting number of mastercard card numbers.
+
+Luhn's algorithm:
+1. With the card number, start from the penultimate digit. Moving left, double the value of every second digit.
+2. Sum the digits of the resulting value in each position.
+3. Add the sum of the resulting values from all positions.
+4. If the last digit of the final sum is zero, the card is valid.
